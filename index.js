@@ -8,7 +8,7 @@ var words = function(language){
     if(possibleLanguages.indexOf(language) == -1) throw new Error(language + " is not valid language");
     return {
         check : function(word){
-            var content = fs.readFileSync('words/'+language+'.txt');
+            var content = fs.readFileSync(__dirname + '/words/'+language+'.txt');
             var regex = new RegExp('\n' + word +'\n');
             if ( content.toString('utf-8').match(regex)) {
                 return true;
@@ -17,5 +17,6 @@ var words = function(language){
         }
     };
 };
+
 
 module.exports = words;

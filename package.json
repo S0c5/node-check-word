@@ -1,7 +1,7 @@
 {
   "name": "check-word",
   "version": "1.0.0",
-  "description": "check if the word exist in the laguage configurated, the language could be english or spanish",
+  "description": "check if the word exist in the language configured, the language could be english or spanish",
   "main": "index.js",
   "scripts": {
     "test": "npm test"
