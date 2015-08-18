@@ -1,5 +1,7 @@
 # check-word
 
+check if the word exist in the language configured, the language could be english or spanish
+
 ### install
 
 ```bash
