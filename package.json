@@ -1,0 +1,27 @@
+{
+  "name": "check-word",
+  "version": "1.0.0",
+  "description": "check if the word exist in the laguage configurated, the language could be english or spanish",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/S0c5/node-check-word.git"
+  },
+  "keywords": [
+    "dictionary",
+    "words",
+    "check",
+    "word",
+    "exist",
+    "word"
+  ],
+  "author": "s0c5 <david.barinas.dev@gmail.com>",
+  "license": "GPL 2.0",
+  "bugs": {
+    "url": "https://github.com/S0c5/node-check-word/issues"
+  },
+  "homepage": "https://github.com/S0c5/node-check-word"
+}
