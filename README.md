@@ -1,6 +1,6 @@
 # check-word
 
-check if the word exist in the language configured, the language could be english or spanish
+check if the word exist in the language configured, the language could be english , spanish, french or german
 
 ### install
 
