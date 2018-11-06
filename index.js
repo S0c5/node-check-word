@@ -13,8 +13,8 @@ var words = function(language){
         check : function(word) {
             // escape special regex characters to match them literally; "I got $ ?" => "I got \$ \?"
             word = escapeStringRegexp(word);
-            var regex = new RegExp('\n' + word +'\n');
-            return !!languageWords.match(regex);
+            // var regex = new RegExp('\n' + word +'\n');
+            return !!languageWords.match(word);
         }
     };
 };
