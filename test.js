@@ -8,6 +8,8 @@ const words = [
   ['aa', true],
   ['kasdjflfasdfas', false],
   ['sam', true],
+  ['Sam', true],
+  ['SAM', true],
   ['zzzs', true],
   ['', true],
 ];

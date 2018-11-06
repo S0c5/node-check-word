@@ -19,7 +19,7 @@ module.exports = function words(language) {
         check : function(word) {
             // escape special regex characters to match them literally; "I got $ ?" => "I got \$ \?"
             word = escapeStringRegexp(word);
-            return !!languageWords.match(word);
+            return !!languageWords.match(new RegExp(word, 'i'));
         }
     };
 };
