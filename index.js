@@ -6,21 +6,17 @@ var words = function(language){
 
     language = language && language.toLowerCase() || 'en';
 
-    if(possibleLanguages.indexOf(language) == -1) throw new Error(language + " is not valid language");
+    if (possibleLanguages.indexOf(language) === -1) throw new Error(language + " is not valid language");
     var content = fs.readFileSync(__dirname + '/words/'+language+'.txt');
-    var contentStr = content.toString('utf-8')
+    var languageWords = content.toString('utf-8');
     return {
-        check : function(word){
-            // escape weird characters for safe regex building
-            word = escapeStringRegexp(word)
+        check : function(word) {
+            // escape special regex characters to match them literally; "I got $ ?" => "I got \$ \?"
+            word = escapeStringRegexp(word);
             var regex = new RegExp('\n' + word +'\n');
-            if ( contentStr.match(regex)) {
-                return true;
-            }
-            return false;
+            return !!languageWords.match(regex);
         }
     };
 };
-
 
 module.exports = words;
