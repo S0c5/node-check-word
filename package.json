@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/S0c5/node-check-word",
   "dependencies": {
+    "commander": "^2.19.0",
     "escape-string-regexp": "^1.0.5"
   }
 }
