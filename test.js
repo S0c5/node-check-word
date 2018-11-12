@@ -6,12 +6,12 @@ const englishWords = checkWords('en');
 const words = [
   ['hello', true],
   ['aa', true],
-  ['kasdjflfasdfas', false],
+  ['zymogenesis', true],
   ['sam', true],
+  ['zzzzzzzzzzzzzzz', false],
   ['Sam', true],
   ['SAM', true],
   ['zzzs', true],
-  ['', true],
 ];
 
 function testWords(words) {
